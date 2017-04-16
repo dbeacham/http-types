@@ -170,7 +170,7 @@ ord8 :: Char -> Word8
 ord8 = fromIntegral . ord
 
 unreservedQS, unreservedPI :: [Word8]
-unreservedQS = map ord8 "-_.~"
+unreservedQS = map ord8 "-_.~:@/!$'()*,"
 unreservedPI = map ord8 "-_.~:@&=+$,"
 
 -- | Percent-encoding for URLs.
